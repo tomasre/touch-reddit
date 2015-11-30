@@ -4,8 +4,9 @@ angular.module('touchReddit', [
     'ngRoute',
     'ngAnimate',
     'ngMaterial',
-    'touchReddit.controllers'
-])
+    'touchReddit.controllers',
+    'touchReddit.services'
+    ])
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl : 'partials/home.html',
