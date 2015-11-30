@@ -5,5 +5,7 @@ Requires nodejs
 ```
 npm install
 ```
+```
 node index.js
+```
 Point your browser to localhost:8080
