@@ -1,4 +1,4 @@
-# touch-reddit  
+# touch-reddit
 Demo for touch friendly ui for browsing reddit
 ## setup for dev locally
 Requires nodejs
