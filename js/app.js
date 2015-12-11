@@ -12,7 +12,4 @@ angular.module('touchReddit', [
         templateUrl : 'partials/home.html',
         controller : 'HomeCtrl'
     });
-}])
-.config(function($mdThemingProvider) {
-    $mdThemingProvider.theme('default').primaryPalette('cyan');
-});
+}]);
