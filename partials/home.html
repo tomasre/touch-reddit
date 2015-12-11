@@ -1,1 +1,37 @@
-<p>Test</p>
+<div>
+    <md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>
+                    <span>Browse Reddit!</span>
+                </h2>
+            </div>
+        </md-toolbar>
+    </md-content>
+
+    <md-content class="md-padding">
+        <div ng-repeat="post in apiData.data.data.children">
+
+            <md-card style="cursor:pointer;" ng-click="changeUrl('http://reddit.com' + post.data.permalink)">
+                <md-card-content>
+                    <div layout="row" layout-margin>
+                        <div flex="10">
+                            <p>
+                                {{post.data.score}}
+                            </p>
+                        </div>
+                        <div flex="20">
+                            <img ng-src="{{post.data.thumbnail}}">
+                        </div>
+                        <div flex="50">
+                            <h5>{{post.data.title}}</h5>
+                        </div>
+                    </div>
+                </md-card-content>
+            </md-card>
+
+            <br>
+        </div>
+    </md-content>
+
+</div>
