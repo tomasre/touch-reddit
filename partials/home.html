@@ -21,7 +21,8 @@
                             </p>
                         </div>
                         <div flex="20">
-                            <img ng-src="{{post.data.thumbnail}}">
+                            <img ng-if="post.data.thumbnail && post.data.thumbnail !== 'self'" ng-src="{{post.data.thumbnail}}">
+                            <img ng-if="!post.data.thumbnail || post.data.thumbnail ==='self'" ng-src="img/reddit_default_thumb.jpg">
                         </div>
                         <div flex="50">
                             <h5>{{post.data.title}}</h5>
